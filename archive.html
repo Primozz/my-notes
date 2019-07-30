@@ -1,0 +1,11 @@
+---
+layout: default
+title: Archive
+---
+<h1>All Notes</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="/my-notes{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

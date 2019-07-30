@@ -1,0 +1,18 @@
+# theme: jekyll-theme-minimal
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      description: "I keep my notes here."
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Primozz"
+      description: "My notes on this topic."
