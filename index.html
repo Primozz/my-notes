@@ -3,7 +3,7 @@ layout: default
 title: My Notes
 ---
     <h1>My notes</h1>
-    <p>Just a place to keep my notes.</p>
+    <p>This is just a place to keep my notes. It is still work-in-progress.</p>
     <p>If you are reading this, keep in mind that all information is provided "as is". No guarantees for the completeness or correctness. Use at your own risk. You know the drill.</p>
     <p>The most recent note follows, all other notes can be found in the <a href="/my-notes/archive.html">archive</a>.</p>
 
@@ -11,6 +11,6 @@ title: My Notes
     <hr />
 
   {% for post in site.posts limit:1 %}
-    <h2><a href="/my-notes{{ post.url }}">{{ post.title }}</a></h2>
+    <h3><a href="/my-notes{{ post.url }}">{{ post.title }}</a></h3>
     {{ post.content }}
   {% endfor %}
