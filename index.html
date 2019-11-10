@@ -11,6 +11,6 @@ title: My Notes
     <hr />
 
   {% for post in site.posts limit:1 %}
-    <h3><a href="/my-notes{{ post.url }}">{{ post.title }}</a></h3>
+    <h1><a href="/my-notes{{ post.url }}">{{ post.title }}</a></h1>
     {{ post.content }}
   {% endfor %}
