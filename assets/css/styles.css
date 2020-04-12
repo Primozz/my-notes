@@ -27,6 +27,12 @@ code {
     border: unset;
     border-radius: unset;
 }
+pre {
+    font-size: 0.9em;
+}
+p + pre {
+    margin-top: -2rem;
+}
 
 .container{
     padding: 3% 0;
@@ -48,10 +54,15 @@ footer p {
 }
 
 abbr:hover::after {
+    text-decoration: none;
     content:' (' attr(title) ')';
 }
+
 @media screen and (min-width: 550px) {
     abbr[title]:after {
         content: ""; 
     }
+}
+.currentpage {
+    border-bottom-style: solid;
 }

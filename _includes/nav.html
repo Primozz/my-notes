@@ -1,7 +1,7 @@
               <nav>
                 <h2></h2>
                 <ul>
-                  <li><a href="/my-notes/index.html">Home</a></li>
-                  <li><a href="/my-notes/archive.html">Archive</a></li>
+                  <li><a href="/my-notes/index.html" {% if page.url == "/my-notes/index.html" %}class="currentpage"{% endif %}>Home</a></li>
+                  <li><a href="/my-notes/archive.html" {% if page.url == "/my-notes/archive.html" %}class="currentpage"{% endif %}>Archive</a></li>
                 </ul>
               </nav>
